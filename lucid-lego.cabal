@@ -1,0 +1,77 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 21c95cc4d8da3f4b88bc537b00505e5dde95d1c33015343511c8788805354b10
+
+name:           lucid-lego
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/lucid-lego#readme>
+homepage:       https://github.com/githubuser/lucid-lego#readme
+bug-reports:    https://github.com/githubuser/lucid-lego/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/lucid-lego
+
+library
+  exposed-modules:
+      Bulma.Component.Level
+      Bulma.Component.Navbar
+      Bulma.Layout.DoubleColumn
+      Bulma.Layout.TripleColumn
+      Bulma.Wrapper
+      Extra
+      Layout.Carousel
+      Layout.Timeline
+      Lib
+  other-modules:
+      Paths_lucid_lego
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , lucid
+    , text
+  default-language: Haskell2010
+
+executable lucid-lego-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_lucid_lego
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , lucid
+    , lucid-lego
+    , text
+  default-language: Haskell2010
+
+test-suite lucid-lego-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_lucid_lego
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , lucid
+    , lucid-lego
+    , text
+  default-language: Haskell2010
+
