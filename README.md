@@ -1,2 +1,1 @@
 # lucid-lego
-# lucid-lego
