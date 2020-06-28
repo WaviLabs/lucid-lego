@@ -1,0 +1,2 @@
+module Vanilla.Basic where
+

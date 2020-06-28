@@ -1,7 +1,10 @@
-module Extra where
+module Extra 
+  ( showText 
+  ) where
 
 import Data.Text
 
 
-showT :: Show a => a -> Text
-showT = pack . show
+showText :: Show a => a -> Text
+showText = pack . show
+
